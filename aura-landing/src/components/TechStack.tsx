@@ -125,10 +125,10 @@ function TechCard({ category, index }: { category: Category; index: number }) {
             />
           </div>
           <div className="min-w-0">
-            <h3 className="text-[15px] font-semibold tracking-tight text-white leading-snug">
+            <h3 className="text-[15px] font-semibold tracking-tight text-white leading-snug text-balance">
               {title}
             </h3>
-            <p className="mt-1 text-[11px] font-medium tracking-wide text-white/35 uppercase">
+            <p className="mt-1 text-[11px] font-medium tracking-wide text-white/35 uppercase text-balance">
               {subtitle}
             </p>
           </div>
@@ -174,10 +174,10 @@ export default function TechStack() {
           <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#3D81E3]/80">
             Experiencia Técnica
           </p>
-          <h2 className="text-3xl font-bold tracking-[-0.03em] text-white md:text-[2.75rem] md:leading-[1.08]">
+          <h2 className="text-3xl font-bold tracking-[-0.03em] text-white md:text-[2.75rem] md:leading-[1.08] text-balance">
             Stack de producción
           </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-[1.75] text-white/45">
+          <p className="mt-5 max-w-xl text-[15px] leading-[1.75] text-white/45 text-pretty">
             Tecnologías con las que diseño APIs REST, modelado de datos y aplicaciones full stack
             desplegadas en entornos reales.
           </p>
