@@ -55,10 +55,8 @@ export default function Contact() {
     const formData = new FormData(form)
     const accessKey = formData.get('access_key')?.toString()
 
-    if (!accessKey || accessKey === 'TU_ACCESS_KEY_AQUI') {
-      setErrorMessage(
-        `Por favor, reemplaza "TU_ACCESS_KEY_AQUI" en el código con tu clave real de Web3Forms, o escríbeme a ${CONTACT_EMAIL}`
-      )
+    if (!accessKey) {
+      setErrorMessage(`Error de configuración. Por favor, comunícate directamente a ${CONTACT_EMAIL}`)
       setStatus('error')
       return
     }
@@ -203,8 +201,7 @@ export default function Contact() {
                 </div>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="relative z-10 space-y-5">
-                  {/* CAMBIA "TU_ACCESS_KEY_AQUI" POR TU CLAVE REAL DE WEB3FORMS */}
-                  <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI" />
+                  <input type="hidden" name="access_key" value="254d7c29-1af2-407c-b29d-25badbd35b32" />
 
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div className="space-y-2">
