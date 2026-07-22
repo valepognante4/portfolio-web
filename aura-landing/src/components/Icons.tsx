@@ -2,42 +2,84 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
   size?: number | string;
 }
 
+// -- Tech Stack Logos --
+
+export function ReactIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348" width={props.size || 24} height={props.size || 24} {...props}>
+      <circle cx="0" cy="0" r="2.05" fill="#61dafb"/>
+      <g stroke="#61dafb" strokeWidth="1" fill="none">
+        <ellipse rx="11" ry="4.2"/>
+        <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+        <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+      </g>
+    </svg>
+  );
+}
+
+export function NodeIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={props.size || 24} height={props.size || 24} {...props}>
+      <path fill="#339933" d="M116.14 36.31L66.78 7.82a5.55 5.55 0 0 0-5.55 0L11.86 36.31a5.55 5.55 0 0 0-2.77 4.8v56.98a5.55 5.55 0 0 0 2.77 4.8l49.37 28.49a5.55 5.55 0 0 0 5.55 0l49.36-28.49a5.55 5.55 0 0 0 2.77-4.8V41.1a5.55 5.55 0 0 0-2.77-4.79zM42.27 82.52l-9.87 5.7L22.53 82.52V46.68L32.4 41v34.42l9.87-5.7v12.8zm23.9-38.38l-10.23 5.9-9.87-5.7V31.54l10.23-5.9L66.17 31.54zm23.9 38.38l-9.87 5.7-9.87-5.7V46.68l9.87-5.68v34.42l9.87-5.7zm13.78-7.95l-9.87 5.7v12.82l-9.87-5.7V46.68l9.87-5.68v34.42l9.87-5.7z"/>
+    </svg>
+  );
+}
+
+export function PostgresIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={props.size || 24} height={props.size || 24} {...props}>
+      <path fill="#336791" d="M30 6.6C12.1 12.3 8.3 26.6 6 38.3c-1.5 8.1-.5 18 2.8 25.5 8.7 19.6 30 33 50.8 39.5 5 1.5 9 1 14.1 1.6-4.6 2.5-9 5.8-13 9a2.5 2.5 0 0 0-.2 3.8l5.8 5.4c1 1 2.8 1.4 4 .5 17.5-13 36-24.8 51.5-39.7 1.2-1 1.7-2.7 1.3-4.2l-2-6a2.6 2.6 0 0 0-3.6-1.5c-4.4 2.1-9.2 4-13.8 6l-.5-3.5c4-3.5 7.7-7 11.2-11.2a2.6 2.6 0 0 0 .3-3.2l-5.6-7c-1-1.3-3-.9-4.2 0-3.6 2.8-7.3 5.4-11 7.8a91.3 91.3 0 0 1-5.6-16 2.6 2.6 0 0 0-3-2l-8.5.8c-1.3.1-2 1.4-1.8 2.7.5 4.3.7 8.7 1 13-18.4 4-38.3-2.3-51-16C15 48.4 12.3 30.6 22 17c1.3-1.8 2.4-3.8 4.2-5.3.3-.3.8-.4 1.3-.4h49c4.7 0 9 2.5 11.8 6.5l3.8-2c-5-6-12.7-8.8-20.2-9.4h-28.5L30 6.5"/>
+    </svg>
+  );
+}
+
+export function DockerIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={props.size || 24} height={props.size || 24} {...props}>
+      <path fill="#2496ed" d="M22.527 10.957a5.572 5.572 0 00-1.748-2.617c-1.127-.92-2.585-1.298-4.04-1.076-.23-.83-.81-1.503-1.637-1.86a2.95 2.95 0 00-2.457.065 3.018 3.018 0 00-1.572 1.956c-1.385-.298-2.824-.13-4.103.498a5.54 5.54 0 00-2.355 2.296C3.93 11.455 3.514 13.064 3.483 14.71c.01 1.258.423 2.483 1.183 3.504A6.155 6.155 0 007.82 20.91a8.49 8.49 0 003.882.898c2.615-.02 5.14-.99 7.07-2.73 1.685-1.5 2.766-3.606 3.01-5.882.723-1.026 1.002-2.26.79-3.487-1.365.174-2.748-.067-4.008-.68zM9.462 16.516a.855.855 0 11-1.708 0 .855.855 0 011.708 0zm4.567 0a.855.855 0 11-1.71 0 .855.855 0 011.71 0zm3.324-11.89h1.995v1.994h-1.995zm-2.22 0h1.996v1.994h-1.996zm-2.22 0H14.91v1.994h-1.995zm4.44 2.22h1.995v1.996h-1.995zm-2.22 0h1.996v1.996h-1.996zm-2.22 0H14.91v1.996h-1.995z"/>
+    </svg>
+  );
+}
+
+export function GitIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={props.size || 24} height={props.size || 24} {...props}>
+      <path fill="#f1502f" d="M125.4 56.4L71.6 2.6c-3.5-3.5-9.1-3.5-12.6 0L42.5 19.1l14 14c4.1-1.3 8.8.1 11.5 3.7 2.8 3.7 2.3 8.8-1 12l13.6 13.6c3.1-3.3 8.3-3.8 12-.1 4.3 4.3 4.3 11.2 0 15.5-4.3 4.3-11.2 4.3-15.5 0-3.7-3.7-4.2-9-.9-12.2L62.7 52.2c-.2.1-.4.1-.6.2v27.2c2.7 1.1 4.7 3.5 5.2 6.5.7 4.1-1.6 8-5.6 9.3-4 1.2-8.3-.7-10-4.6-1.5-3.4-.1-7.5 3.3-9.4V53.8c-3.4-1.9-4.8-6.1-3.3-9.5 1.5-3.4 5.3-5.2 9-4.2l-13.6-13.6L2.6 71.6c-3.5 3.5-3.5 9.1 0 12.6l53.8 53.8c3.5 3.5 9.1 3.5 12.6 0l56.4-56.4c3.5-3.5 3.5-9.1 0-12.6z"/>
+    </svg>
+  );
+}
+
+export function JavaIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={props.size || 24} height={props.size || 24} {...props}>
+      <path fill="#5382a1" d="M83.4 90.9c-8.7 4.1-23.7 6-39.7 4.4-4-.4-5.3.3-4.9 2.5 1.7 8.3 22.7 12 41 8 16-3.5 20.3-8.8 20.1-12.4-.2-4.1-6.1-7.5-16.5-2.5m-30-22c-7.9.6-13 3-10.4 5.7 3.9 4 19 6 36.3 4 18-2 29.5-6.5 27.5-10-2-3.8-19.1-3.9-35-1.5-5 .8-13 1.4-18.4 1.8M40.2 84c-3.2 4 4.5 9.4 18.5 12 18.2 3.4 39.5.4 46.5-5.5 3-2.6 1.4-5.5-3-5.5s-8.1 1.7-15 3.2c-15.5 3.4-38.3 3.4-47-4.2m34.7-65.4c-9.5-4-19 6.2-7 15.5 10.3 8.1 4.5 21.6-4.5 24 5.1-6.3.3-15.3-6.5-18.5-8.5-4-9-19 .5-25 15.5-9.5 27.5.5 17.5 4M55 49c-3.2-3.6-7-10.1-.5-14.7 9.3-6.5 2.1-14.6-2-16-12 13-3 23.8 5 28.5 5.9 3.5 3 7.8-2.5 2.2"/>
+    </svg>
+  );
+}
+
+export function SpringIcon(props: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width={props.size || 24} height={props.size || 24} {...props}>
+      <path fill="#6db33f" d="M125 64C125 30.3 97.7 3 64 3S3 30.3 3 64s27.3 61 61 61 61-27.3 61-61m-57.8 45.4c-1.8 1.4-4.5 1.9-6.3.3-13-10.8-31-31.1-23.7-56.1 1.4-5 3.4-9.3 6-12.8 1.9-2.5 3.7-2.3 4.2 1.5 2.4 17.7 18 31 18 31s-3.7 8-9.4 18.2c1.7-2.3 8-10.9 8-10.9s5.6-2.5 15.6-2c5.6.3 11 1.8 14.5 3.8 5.7 3.3 2.8 10-2.3 10-4.3 0-11-2.5-22.3.8-3.7 1-10.5 4.7-16.7 10.4-3.6 3.3.4 5.2 2 4 10.4-8 19-11 28.5-11 9 0 13.5 3.7 15.2 5.5 1.5 1.5-.7 4.7-2.6 3.6-1.5-.8-6.3-4-15.8-3.2-11.8.8-19.3 8.3-21.5 10.2-.4.4-1 .8-1.4.7"/>
+    </svg>
+  );
+}
+
 export function GithubIcon(props: IconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={props.size || 24}
-      height={props.size || 24}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4"></path>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={props.strokeWidth || 1.2} strokeLinecap="round" strokeLinejoin="round" width={props.size || 24} height={props.size || 24} {...props}>
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+      <path d="M9 18c-4.51 2-5-2-7-2" />
     </svg>
   );
 }
 
 export function LinkedinIcon(props: IconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={props.size || 24}
-      height={props.size || 24}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-      <rect width="4" height="12" x="2" y="9"></rect>
-      <circle cx="4" cy="4" r="2"></circle>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={props.strokeWidth || 1.2} strokeLinecap="round" strokeLinejoin="round" width={props.size || 24} height={props.size || 24} {...props}>
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
     </svg>
   );
 }

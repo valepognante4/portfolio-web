@@ -4,11 +4,11 @@ import { Mail, Menu, X } from 'lucide-react'
 import { GithubIcon as Github } from './Icons'
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Tech Stack', href: '#stack' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Sobre mí', href: '#about' },
+  { label: 'Tecnologías', href: '#stack' },
+  { label: 'Proyectos', href: '#projects' },
+  { label: 'Experiencia', href: '#experience' },
+  { label: 'Contacto', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -36,16 +36,11 @@ export default function Navbar() {
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
           {/* Logo / initials */}
-          <a href="#hero" className="flex items-center gap-2.5 group flex-shrink-0">
-            <div className="relative">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#3D81E3] to-[#1a4fa8] flex items-center justify-center font-bold text-sm text-white shadow-lg">
-                MVP
-              </div>
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-black animate-badge" />
-            </div>
-            <span className="hidden sm:block font-semibold text-sm text-white/80 group-hover:text-white transition-colors">
+          <a href="#hero" className="flex items-center gap-2 group flex-shrink-0">
+            <span className="font-semibold text-lg md:text-xl tracking-tight text-white/90 group-hover:text-white group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)] transition-all">
               Valentina Pognante
             </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-badge mb-3 ml-0.5" />
           </a>
 
           {/* Center nav */}
@@ -77,24 +72,24 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 bg-white/[0.04] text-sm font-medium text-white/70 hover:text-white hover:border-white/20 hover:bg-white/[0.08] transition-all"
             >
-              <Github size={14} />
+              <Github size={14} strokeWidth={1.2} />
               GitHub
             </a>
             <a
               href="mailto:valentinapognante4@gmail.com"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#3D81E3] text-sm font-medium text-white hover:bg-[#5593e8] transition-all shadow-lg shadow-brand/20"
             >
-              <Mail size={14} />
-              Email Me
+              <Mail size={14} strokeWidth={1.2} />
+              Contactar
             </a>
           </div>
 
           {/* Mobile menu toggle */}
           <button
-            className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-white/70"
+            className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-white/70 hover:text-white transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            {mobileOpen ? <X size={16} /> : <Menu size={16} />}
+            {mobileOpen ? <X size={16} strokeWidth={1.2} /> : <Menu size={16} strokeWidth={1.2} />}
           </button>
         </div>
       </motion.header>
@@ -131,7 +126,7 @@ export default function Navbar() {
                 href="mailto:valentinapognante4@gmail.com"
                 className="flex-1 text-center py-2 rounded-full bg-[#3D81E3] text-sm text-white font-medium"
               >
-                Email Me
+                Contactar
               </a>
             </div>
           </motion.div>
