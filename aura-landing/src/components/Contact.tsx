@@ -27,7 +27,7 @@ const contacts = [
     icon: Linkedin,
     label: 'LinkedIn',
     handle: 'María Valentina Pognante',
-    href: 'https://www.linkedin.com/in/maría-valentina-pognante-ba3491363',
+    href: 'https://www.linkedin.com/in/mar%C3%ada-valentina-pognante-ba3491363',
     color: '#0A66C2',
     desc: 'Conexión profesional',
   },
@@ -411,7 +411,7 @@ export default function Contact() {
               <Github size={15} strokeWidth={1.2} />
             </a>
             <a
-              href="https://www.linkedin.com/in/mar%C3%ADa-valentina-pognante"
+              href="https://www.linkedin.com/in/mar%C3%ADa-valentina-pognante-ba3491363"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/30 transition-all hover:text-white hover:scale-110"
