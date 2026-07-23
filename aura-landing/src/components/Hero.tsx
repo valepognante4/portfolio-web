@@ -39,7 +39,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
           {/* ── Left: Text content ── */}
-          <div className="flex flex-col justify-center order-2 lg:order-1">
+          <div className="flex flex-col justify-center order-1">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -85,19 +85,19 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="mt-8 flex flex-wrap gap-3"
+              className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3 w-full"
             >
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#3D81E3] text-white font-semibold text-sm hover:bg-[#5593e8] transition-all shadow-xl shadow-brand/25 hover:shadow-brand/40 hover:-translate-y-0.5"
+                className="inline-flex justify-center items-center gap-2 px-6 py-3 rounded-full bg-[#3D81E3] text-white font-semibold text-sm hover:bg-[#5593e8] transition-all shadow-xl shadow-brand/25 hover:shadow-brand/40 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <ExternalLink size={15} strokeWidth={1.2} />
                 Ver Proyectos
               </a>
               <a
-                href="/cv.pdf"
+                href="/CV-María Valentina Pognante (28).pdf"
                 download="CV_Maria_Valentina_Pognante.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all text-white font-medium text-sm"
+                className="inline-flex justify-center items-center gap-2 px-6 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all text-white font-medium text-sm w-full sm:w-auto"
               >
                 <Download size={15} strokeWidth={1.2} />
                 Descargar CV
@@ -120,7 +120,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.96, x: 30 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end group"
+            className="order-2 flex justify-center lg:justify-end group"
           >
             <div className="relative">
               {/* Premium Gradient Frame */}
