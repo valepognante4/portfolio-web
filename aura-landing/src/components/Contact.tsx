@@ -27,7 +27,7 @@ const contacts = [
     icon: Linkedin,
     label: 'LinkedIn',
     handle: 'María Valentina Pognante',
-    href: 'https://www.linkedin.com/in/mar%C3%ADa-valentina-pognante-ba3491363',
+    href: 'https://www.linkedin.com/in/maría-valentina-pognante-ba3491363',
     color: '#0A66C2',
     desc: 'Conexión profesional',
   },
