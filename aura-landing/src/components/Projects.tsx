@@ -21,7 +21,7 @@ const projects = [
       'Desplegado en Render',
     ],
     accentColor: '#34d399',
-    repoUrl: 'https://github.com/valepognante4',
+    repoUrl: 'https://github.com/valepognante4/vplan-web',
     liveUrl: undefined as string | undefined,
   },
   {
@@ -41,7 +41,7 @@ const projects = [
       'Persistencia en tiempo real',
     ],
     accentColor: '#f59e0b',
-    repoUrl: 'https://github.com/valepognante4',
+    repoUrl: 'https://github.com/valepognante4/soundly-music-platform',
     liveUrl: undefined as string | undefined,
   },
   {
@@ -61,7 +61,7 @@ const projects = [
       'Arquitectura por capas',
     ],
     accentColor: '#a78bfa',
-    repoUrl: 'https://github.com/valepognante4',
+    repoUrl: 'https://github.com/valepognante4/veterinary-clinic-api',
     liveUrl: undefined as string | undefined,
   },
 ]

@@ -411,7 +411,7 @@ export default function Contact() {
               <Github size={15} strokeWidth={1.2} />
             </a>
             <a
-              href="https://linkedin.com/in/mar%C3%ADa-valentina-pognante-ba3491363"
+              href="https://www.linkedin.com/in/mar%C3%ADa-valentina-pognante-3ab8963a0"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/30 transition-all hover:text-white hover:scale-110"

@@ -95,11 +95,12 @@ export default function Hero() {
                 Ver Proyectos
               </a>
               <a
-                href="mailto:valentinapognante4@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 bg-white/[0.04] text-white font-semibold text-sm hover:bg-white/[0.08] hover:border-white/25 transition-all hover:-translate-y-0.5 backdrop-blur-sm"
+                href="/cv.pdf"
+                download="CV_Maria_Valentina_Pognante.pdf"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all text-white font-medium text-sm"
               >
                 <Download size={15} strokeWidth={1.2} />
-                Descargar CV / Contacto
+                Descargar CV
               </a>
             </motion.div>
 
